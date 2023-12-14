@@ -10,6 +10,12 @@
 		<c:set var="list" value="${dao.selectListByCategory(param.category) }"></c:set>
 	</c:if>
 	
+	<div>
+		<a href="${cpath }/add.jsp"><button>추가</button></a>
+	
+	</div>
+	
+	
 	
 	<div class="box">
 	<c:forEach var="dto" items="${list }">
@@ -17,7 +23,7 @@
 			<div class="img">
 				<a href="${cpath }/view.jsp?idx=${dto.idx}">
 					<img src="${cpath }/image/${dto.imgName}" height="120"></a>
-			</div>
+			</div> 
 			<div class="name">${dto.name }</div>
 			<div class="price">${dto.price }원</div>
 		</div>
