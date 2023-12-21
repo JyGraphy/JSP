@@ -152,7 +152,7 @@ public class McdonaldDAO {
 	
 	// select mcdonald_seq.currrval from dual
 	public int selectCurrSeq() {
-		int idx =0;
+		int idx = 0;
 		String sql = "select max(idx) from mcdonald";
 	
 		try {
