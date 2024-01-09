@@ -29,7 +29,7 @@ public class Paging {
 		this.page = page;
 		this.boardCount = boardCount;
 		
-		offset = (page -1 ) * 10;
+		offset = (page -1 ) * perPge;
 		perPge = 10;
 		fetch = perPge;
 		
