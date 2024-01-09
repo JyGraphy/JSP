@@ -12,7 +12,7 @@
 		</c:if>
 	
 	<form method="POST">
-		<p><input type="text" name="title" placeholder="제목" required="required" autofocus="autofocus"></p>
+		<p><input type="text" name="title" placeholder="제목" required="required"></p>
 			<input type="hidden" name="writer" value="${login.userid }">
 		<p>
 			<textarea name="content" placeholder="내용" rows="5" cols="80"></textarea>

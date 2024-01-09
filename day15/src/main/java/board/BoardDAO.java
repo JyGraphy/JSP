@@ -69,7 +69,7 @@ public class BoardDAO {
 			while (rs.next()) {
 				list.add(mapping(rs));
 			}
-		} catch (SQLException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}finally {close();}
 		return list;

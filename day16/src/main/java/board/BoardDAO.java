@@ -103,7 +103,7 @@ public class BoardDAO {
 	public int insert(BoardDTO dto) {
 		int row =0;
 		String sql = "insert into board (title, writer, content)"
-				+ "values (?,?,?)";
+				+ "values (?, ?, ?)";
 		try {
 			coon = ds.getConnection();
 			pstmt = coon.prepareStatement(sql);
